@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony Hospital</title>
+
+  <link rel="icon" href="images/harmony_logo-no bgprevi.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <linkhref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- Bootstrap JS & jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="laboratory.css">
+
+  
+
+
+
+</head>
+<body>
+  <!-- Topbar Start -->
+<div class="top-bar">
+  <!-- Left: Contact Info -->
+  <div class="contact-info">
+    <span class="contact-item">
+      <i class="fas fa-envelope"></i> HarmonyHospital@gmail.com 
+  </span>
+  <span class="contact-item">
+      <i class="fas fa-phone"></i> +12679085444
+  </span>
+    <span class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>  Martha Road, Pensalvania, USA
+    </span>
+  </div>
+
+  <!-- Center: Social Icons -->
+  <div class="social-icons">
+    <a href="https://www.facebook.com" class="social-icon" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com" class="social-icon" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com" class="social-icon" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+</div>
+<!-- Topbar End -->
+
+
+  <div class="navbar">
+    <div class="navbar-brand">
+      <img class="brand-logo" src="images/harmony_logo-no bgprevi.png" alt="Phf logo">
+      <span>Harmony Hospital
+      </span>
+    </div>
+
+  
+     
+    <div class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="laboratory.html">Laboratory</a></li>
+     <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </div>
+  
+    
+  
+    <div class="hamburger-menu">
+      <i class="fas fa-bars"></i> <!-- Example icon, make sure you have font-awesome included -->
+  </div>
+  </div>
+
+  <script>
+    // Get the hamburger icon and the nav links
+const hamburger = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
+
+// Toggle the 'show' class when the hamburger is clicked
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
+
+  </script>
+
+<div class="container-fluid bg-breadcrumb">
+  <div class="container text-center py-5" style="max-width: 900px;">
+      <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Laboratory</h4>
+      <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+          <li class="breadcrumb-item"><a href="about.html">About</a></li>
+          <li class="breadcrumb-item"><a href="contact.html">Contact</a></li>
+          <li class="breadcrumb-item active text-primary">Laboratory</li>
+      </ol>    
+  </div>
+</div>
+
+
+
+<!-- About Start -->
+<div id="lab-about-section" class="container-xxl py-5">
+  <div class="container">
+      <!-- Centered Heading -->
+      <div class="lab-about-heading">
+          <h1>About the Laboratory</h1>
+          <img src="images/heading-underline.png" class="underline-image" alt="Heading Underline">
+      </div>
+
+      <div class="row g-5">
+          <!-- Left Column - Images -->
+          <div class="col-lg-6">
+              <div class="image-section">
+                  <img class="main-image" src="images/lab-image.webp" alt="Laboratory Image">
+              </div>
+          </div>
+
+          <!-- Right Column - Text Content -->
+          <div class="col-lg-6 text-content">
+            <p>Our laboratory is equipped with cutting-edge technology and a team of highly skilled professionals. We are committed to delivering accurate, efficient, and reliable laboratory services while ensuring high safety and quality standards.</p>
+
+            <div class="check-list">
+                  <p><i class="far fa-check-circle"></i> Advanced Testing Equipment</p>
+                  <p><i class="far fa-check-circle"></i> Certified and Experienced Scientists</p>
+                  <p><i class="far fa-check-circle"></i> Reliable and Accurate Results</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const labAboutSection = document.querySelector("#lab-about-section");
+  
+    function handleScroll() {
+      const sectionPosition = labAboutSection.getBoundingClientRect().top;
+      const screenHeight = window.innerHeight;
+  
+      if (sectionPosition < screenHeight * 0.8) {
+        labAboutSection.classList.add("visible");
+        window.removeEventListener("scroll", handleScroll); // Remove event after animation
+      }
+    }
+  
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Check on page load in case it's already in view
+  });
+
+  
+  document.addEventListener("DOMContentLoaded", function () {
+  const textContent = document.querySelectorAll("#lab-about-section .text-content p");
+  const checklistItems = document.querySelectorAll("#lab-about-section .check-list p");
+
+  // Function to check visibility of an element
+  function checkVisibility(element) {
+    const rect = element.getBoundingClientRect();
+    const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+    if (isVisible) {
+      element.classList.add("visible"); // Add 'visible' class to trigger fade-in
+    }
+  }
+
+  // Check visibility for text content and checklist items
+  function checkAllVisibility() {
+    textContent.forEach(checkVisibility);
+    checklistItems.forEach(checkVisibility);
+  }
+
+  // Initial check on page load and when scrolling
+  window.addEventListener("scroll", checkAllVisibility);
+  checkAllVisibility(); // Trigger visibility check as soon as the page loads
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const mainImage = document.querySelector("#lab-about-section .main-image");
+
+  // Function to check visibility of an element
+  function checkVisibility(element) {
+    const rect = element.getBoundingClientRect();
+    const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+    if (isVisible) {
+      element.classList.add("visible"); // Add 'visible' class to trigger fade-in from left
+    }
+  }
+
+  // Check visibility on scroll and initial page load
+  function checkImageVisibility() {
+    checkVisibility(mainImage);
+  }
+
+  // Trigger the visibility check as soon as the page loads and during scrolling
+  window.addEventListener("scroll", checkImageVisibility);
+  checkImageVisibility(); // Ensure it checks on page load
+});
+
+</script>
+<!-- About End -->
+
+
+
+
+<section class="service-section">
+  <h1>Laboratory Tests</h1>
+    <img src="images/heading-underline.png" class="underline-image" alt="Heading Underline">
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="icon-wrapper">
+        <i class="fas fa-vial"></i></div>
+      <h3>Blood Tests</h3>
+      <p>CBC, Lipid Profile, Blood Sugar, and more for health assessment.</p>
+
+      </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="icon-wrapper">
+        <i class="fas fa-flask"></i></div>
+      <h3>Excretory System Testing</h3>
+      <p>Comprehensive analysis to detect infections and conditions.</p>
+
+
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="icon-wrapper">
+        <i class="fas fa-virus"></i></div>
+        <h3>COVID-19 & Viral Tests</h3>
+        <p>Accurate diagnostic tests for COVID-19 and other viral infections.</p>
+  
+
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="icon-wrapper">
+        <i class="fas fa-dna"></i></div>
+      <h3>Hormone Testing</h3>
+      <p>Thyroid, Insulin, and other hormone assessments for balance.</p>
+
+
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="icon-wrapper">
+        <i class="fas fa-dna"></i></div>
+      <h3>DNA & Genetic Testing</h3>
+      <p>Comprehensive genetic screening for inherited conditions.</p>
+
+
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="icon-wrapper">
+        <i class="fas fa-microscope"></i></div>
+        <h3>Microbiology & Pathology</h3>
+        <p>Detailed analysis of microorganisms and pathological conditions.</p>
+  
+
+    </div>
+  </div>
+</div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  const serviceSection = document.querySelector('.service-section');
+
+  function checkVisibility() {
+    const rect = serviceSection.getBoundingClientRect();
+    // Trigger when the top of the service section is within 80% of the viewport height
+    if (rect.top < window.innerHeight * 0.8) {
+      serviceSection.classList.add("visible");
+      // Remove listener if you want the animation to occur only once:
+      window.removeEventListener("scroll", checkVisibility);
+    }
+  }
+
+  window.addEventListener("scroll", checkVisibility);
+  checkVisibility(); // Check on page load in case it's already in view
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const serviceSection = document.querySelector('.service-section');
+
+  function checkVisibility() {
+    const rect = serviceSection.getBoundingClientRect();
+    if (rect.top < window.innerHeight * 0.8) { // Trigger when 80% of the section is in the viewport
+      serviceSection.classList.add("visible"); // Add 'visible' class to trigger animation
+      window.removeEventListener("scroll", checkVisibility); // Remove scroll event listener once triggered
+    }
+  }
+
+  window.addEventListener("scroll", checkVisibility);
+  checkVisibility(); // Check immediately on page load in case the section is already in view
+});
+
+</script>
+
+
+
+
+<section class="urgent-care">
+  <div class="urgent-overlay">
+    <div class="urgent-slider">
+      <div class="urgent-box">
+        <img src="images/clock icon.png" alt="24/7 Timings">
+        <p>24/7 Timings</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/healthcare icon.png" alt="Healthcare">
+        <p>Healthcare</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/pharmacy icon.png" alt="Pharmacy">
+        <p>Pharmacy</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/lab icon.png" alt="Laboratory">
+        <p>Laboratory</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/emergency icon.png" alt="Ambulance">
+        <p>Emergency </p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/doctor icon.png" alt="Expert Doctors">
+        <p>Expert Doctors</p>
+      </div>
+
+      <div class="urgent-box">
+        <img src="images/clock icon.png" alt="24/7 Timings">
+        <p>24/7 Timings</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/healthcare icon.png" alt="Healthcare">
+        <p>Healthcare</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/pharmacy icon.png" alt="Pharmacy">
+        <p>Pharmacy</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/lab icon.png" alt="Laboratory">
+        <p>Laboratory</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/emergency icon.png" alt="Ambulance">
+        <p>Emergency </p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/doctor icon.png" alt="Expert Doctors">
+        <p>Expert Doctors</p>
+      </div>
+
+      <div class="urgent-box">
+        <img src="images/clock icon.png" alt="24/7 Timings">
+        <p>24/7 Timings</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/healthcare icon.png" alt="Healthcare">
+        <p>Healthcare</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/pharmacy icon.png" alt="Pharmacy">
+        <p>Pharmacy</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/lab icon.png" alt="Laboratory">
+        <p>Laboratory</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/emergency icon.png" alt="Ambulance">
+        <p>Emergency </p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/doctor icon.png" alt="Expert Doctors">
+        <p>Expert Doctors</p>
+      </div>
+
+      <div class="urgent-box">
+        <img src="images/clock icon.png" alt="24/7 Timings">
+        <p>24/7 Timings</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/healthcare icon.png" alt="Healthcare">
+        <p>Healthcare</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/pharmacy icon.png" alt="Pharmacy">
+        <p>Pharmacy</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/lab icon.png" alt="Laboratory">
+        <p>Laboratory</p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/emergency icon.png" alt="Ambulance">
+        <p>Emergency </p>
+      </div>
+      <div class="urgent-box">
+        <img src="images/doctor icon.png" alt="Expert Doctors">
+        <p>Expert Doctors</p>
+      </div>
+
+          
+    </div>
+  </div>
+</section>
+
+
+
+<section class="faq">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-xl-8 col-lg-8 text-center">
+              <div class="section-title">
+                <h1>Frequently Asked Questions</h1>
+                <img src="images/heading-underline.png" class="top-image" alt="Trust Icon">
+              </div>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="col-xl-6 col-lg-6">
+              <div class="accordion" id="accordionRowOne">
+                  <!-- Question 1 -->
+                  <div class="card">
+                      <div class="card-header">
+                          <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                  data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                  How can I book a lab test?
+                              </button>
+                          </h5>
+                      </div>
+                      <div id="collapseOne" class="collapse" data-parent="#accordionRowOne">
+                          <div class="card-body">
+                             Visit the lab directly for walk-in appointments.
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Question 2 -->
+                  <div class="card">
+                      <div class="card-header">
+                          <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  What types of tests do you offer?
+                              </button>
+                          </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" data-parent="#accordionRowOne">
+                          <div class="card-body">
+                            We offer a wide range of lab tests, including blood tests, urine tests, microbiology tests, pathology tests, and specialized diagnostic screenings.
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Question 5 -->
+                  <div class="card">
+                      <div class="card-header">
+                          <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                  data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                  Can I get my test results online?
+                              </button>
+                          </h5>
+                      </div>
+                      <div id="collapseFive" class="collapse" data-parent="#accordionRowOne">
+                          <div class="card-body">
+                           You can only receive lab results physically.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-xl-6 col-lg-6">
+              <div class="accordion" id="accordionRowTwo">
+                  <!-- Question 3 -->
+                  <div class="card">
+                      <div class="card-header">
+                          <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  Do you offer home sample collection?
+                              </button>
+                          </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" data-parent="#accordionRowTwo">
+                          <div class="card-body">
+                            No, we don't.
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Question 4 -->
+                  <div class="card">
+                      <div class="card-header">
+                          <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                  data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                  How long does it take to get lab test results?
+                              </button>
+                          </h5>
+                      </div>
+                      <div id="collapseFour" class="collapse" data-parent="#accordionRowTwo">
+                          <div class="card-body">
+                            The turnaround time depends on the test type. Routine blood tests are usually available within 24 hours, while specialized tests may take 3-5 days.
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- Question 6 -->
+                  <div class="card">
+                      <div class="card-header">
+                          <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                  data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                  Is fasting required before certain tests?
+                              </button>
+                          </h5>
+                      </div>
+                      <div id="collapseSix" class="collapse" data-parent="#accordionRowTwo">
+                          <div class="card-body">
+                            Some tests, like fasting blood sugar and lipid profile, require fasting for 8-12 hours. Our staff will guide you on preparation before your test.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<!-- Footer Start -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Footer Column 1: About Section -->
+      <div class="col-md-4">
+        <h5>About Us</h5>
+        <p>Harmony Hospital is dedicated to providing the best healthcare services with a team of highly skilled professionals.</p>
+      </div>
+
+      <!-- Footer Column 2: Quick Links -->
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="laboratory.html">Laboratory</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Column 3: Contact -->
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+        <p><i class="fas fa-envelope"></i> harmonyhospital@gmail.com        </p>
+        <p><i class="fas fa-phone"></i> +12679085444</p>
+        <p><i class="fas fa-map-marker-alt"></i> Martha Road, Pensalvania, USA</p>
+          <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom text-center">
+      
+      <p>&copy; Harmony Hospital. All Rights Reserved. ztcreativedesign/p>
+
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
+
+
+
+<script src="script.js"></script>
+
+
+  
+  
+</body>
+</html>

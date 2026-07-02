@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony Hospital </title>
+
+  <link rel="icon" href="images/harmony_logo-no bgprevi.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <linkhref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- Bootstrap JS & jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="contact.css">
+
+
+  
+
+
+</head>
+<body>
+ <!-- Topbar Start -->
+<div class="top-bar">
+  <!-- Left: Contact Info -->
+  <div class="contact-info">
+    <span class="contact-item">
+      <i class="fas fa-envelope"></i> HarmonyHospital@gmail.com 
+  </span>
+  <span class="contact-item">
+      <i class="fas fa-phone"></i> +12679085444
+  </span>
+    <span class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>  Martha Road, Pensalvania, USA
+    </span>
+  </div>
+
+  <!-- Center: Social Icons -->
+  <div class="social-icons">
+    <a href="https://www.facebook.com" class="social-icon" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com" class="social-icon" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com" class="social-icon" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+</div>
+<!-- Topbar End -->
+
+
+  <div class="navbar">
+    <div class="navbar-brand">
+      <img class="brand-logo" src="images/harmony_logo-no bgprevi.png" alt="Phf logo">
+      <span>Harmony Hospital </span>
+    </div>
+
+   
+    <div class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="laboratory.html">Laboratory</a></li>
+     <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </div>
+  
+  
+    
+  
+    <div class="hamburger-menu">
+      <i class="fas fa-bars"></i> <!-- Example icon, make sure you have font-awesome included -->
+  </div>
+  </div>
+
+  <script>
+    // Get the hamburger icon and the nav links
+const hamburger = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
+
+// Toggle the 'show' class when the hamburger is clicked
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
+
+  </script>
+
+<div class="container-fluid bg-breadcrumb">
+  <div class="container text-center py-5" style="max-width: 900px;">
+      <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact</h4>
+      <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="services.html">Services</a></li>
+          <li class="breadcrumb-item"><a href="laboratory.html">Laboratory</a></li>
+          <li class="breadcrumb-item"><a href="about.html">About</a></li>
+          <li class="breadcrumb-item active text-primary">Contact</li>
+      </ol>    
+  </div>
+</div>
+
+<!-- Start Contact Info Boxes -->
+<section class="contact-info-boxes">
+    <div class="container">
+        <div class="row">
+            <!-- Email Box -->
+            <div class="col-md-4">
+                <div class="contact-box">
+                    <i class="fas fa-envelope"></i> <!-- Email Icon -->
+                    <div class="content">
+                        <h3>harmonyhealth@gmail.com </h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phone Box -->
+            <div class="col-md-4">
+                <div class="contact-box">
+                    <i class="fas fa-phone-alt"></i> <!-- Phone Icon -->
+                    <div class="content">
+                        <h3>+12679085444</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location Box -->
+            <div class="col-md-4">
+                <div class="contact-box">
+                    <i class="fas fa-map-marker-alt"></i> <!-- Location Icon -->
+                    <div class="content">
+                        <h3>Martha Road, Pensalvania, USA</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Contact Info Boxes -->
+
+
+<div class="map-container">
+    <iframe 
+      src="https://maps.google.com/maps?q=5+Semawata+Road,+Ntinda,+Kampala,+Uganda&output=embed" 
+      width="100%" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <script>
+    // Select the map container
+const mapContainer = document.querySelector('.map-container');
+
+// Set up the IntersectionObserver to detect when the map container comes into view
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Add the 'visible' class to trigger the animation
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); // Stop observing once the animation is triggered
+    }
+  });
+}, {
+  threshold: 0.5 // Trigger when 50% of the element is in view
+});
+
+// Observe the map container
+observer.observe(mapContainer);
+
+  </script>
+  
+  
+
+ <!-- Start Contact Section -->
+<section class="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <h1> Contact Us</h1>
+            <img src="images/heading-underline.png" alt="#">
+            <p> Get in touch with us today for any inquiries, assistance, or support. We are here to help you with all your needs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-12">
+          <form class="form" action="contact-form.php" method="POST">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-group">
+                  <input name="name" type="text" placeholder="Your Name">
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-group">
+                  <input name="email" type="email" placeholder="Your Email">
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-group">
+                  <input name="phone" type="text" placeholder="Your Phone Number">
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <div class="form-group">
+                  <input name="date" type="date" placeholder="Select Date">
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 col-12">
+                <div class="form-group">
+                  <textarea name="message" placeholder="Write Your Message Here..."></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-5 col-md-4 col-12">
+                <div class="form-group">
+                  <div class="button">
+                    <button type="submit" class="btn">SUBMIT</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-6 col-md-12 ">
+          <div class="contact-image">
+            <img src="images/contact-img.png" alt="#">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  
+    document.addEventListener("DOMContentLoaded", function () {
+  const sectionTitle = document.querySelector(".section-title");
+  
+  function handleScroll() {
+    if (!sectionTitle) return; // Ensure the element exists
+
+    const sectionPosition = sectionTitle.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    // When the section is 80% of the way into the viewport
+    if (sectionPosition < screenHeight * 0.8) {
+      sectionTitle.classList.add("visible");
+      window.removeEventListener("scroll", handleScroll); // Run animation only once
+    }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+  handleScroll(); // Check on page load
+});
+   
+
+// Function to detect when an element is in view
+function isInView(element) {
+  const rect = element.getBoundingClientRect();
+  return rect.top <= window.innerHeight && rect.bottom >= 0;
+}
+
+// Function to add the 'visible' class when in view
+function handleScroll() {
+  const images = document.querySelectorAll('.contact .contact-image img');
+  images.forEach(img => {
+    if (isInView(img)) {
+      img.classList.add('visible');
+    }
+  });
+}
+
+// Listen for scroll events
+window.addEventListener('scroll', handleScroll);
+
+// Trigger the check immediately in case elements are already in view
+handleScroll();
+
+  </script>
+
+  <!-- End Appointment -->
+  
+
+        
+      
+<!-- Footer Start -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Footer Column 1: About Section -->
+      <div class="col-md-4">
+        <h5>About Us</h5>
+        <p>Harmony Hospital  is dedicated to providing the best healthcare services with a team of highly skilled professionals.</p>
+      </div>
+
+      <!-- Footer Column 2: Quick Links -->
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="laboratory.html">Laboratory</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Footer Column 3: Contact -->
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+       <p><i class="fas fa-envelope"></i> harmonyhospital@gmail.com        </p>
+        <p><i class="fas fa-phone"></i> +12679085444</p>
+        <p><i class="fas fa-map-marker-alt"></i> Martha Road, Pensalvania, USA</p>
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom text-center">
+      
+      <p>&copy; Harmony Hospital . All Rights Reserved.ztcreativedesign</p>
+
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
+
+
+
+
+
+  
+  
+</body>
+</html>

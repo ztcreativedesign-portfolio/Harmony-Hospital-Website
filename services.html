@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmony Hospital</title>
+  <link rel="icon" href="images/harmony_logo-no bgprevi.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <linkhref="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- Bootstrap JS & jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icofont@1.0.0/icofont.min.css">
+
+<!-- Add jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Add jQuery UI CSS for datepicker styling -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<!-- Add jQuery UI JS for the datepicker functionality -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" href="services.css">
+
+
+
+
+</head>
+<body>
+ <!-- Topbar Start -->
+<div class="top-bar">
+  <!-- Left: Contact Info -->
+  <div class="contact-info">
+    <span class="contact-item">
+      <i class="fas fa-envelope"></i> HarmonyHospital@gmail.com 
+  </span>
+  <span class="contact-item">
+      <i class="fas fa-phone"></i> +12679085444
+  </span>
+    <span class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>  Martha Road, Pensalvania, USA
+    </span>
+  </div>
+
+  <!-- Center: Social Icons -->
+  <div class="social-icons">
+    <a href="https://www.facebook.com" class="social-icon" target="_blank">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com" class="social-icon" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com" class="social-icon" target="_blank">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+</div>
+<!-- Topbar End -->
+
+
+  <div class="navbar">
+    <div class="navbar-brand">
+      <img class="brand-logo" src="images/harmony_logo-no bgprevi.png" alt="Phf logo">
+      <span>Harmony Hospital</span>
+    </div>
+
+  
+     
+    <div class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="laboratory.html">Laboratory</a></li>
+     <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </div>
+  
+    
+  
+    <div class="hamburger-menu">
+      <i class="fas fa-bars"></i> <!-- Example icon, make sure you have font-awesome included -->
+  </div>
+  </div>
+
+  <script>
+    // Get the hamburger icon and the nav links
+const hamburger = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
+
+// Toggle the 'show' class when the hamburger is clicked
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
+
+  </script>
+
+<div class="container-fluid bg-breadcrumb">
+  <div class="container text-center py-5" style="max-width: 900px;">
+      <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Services</h4>
+      <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="laboratory.html">Laboratory</a></li>
+          <li class="breadcrumb-item"><a href="about.html">About</a></li>
+          <li class="breadcrumb-item"><a href="contact.html">Contact</a></li>
+          <li class="breadcrumb-item active text-primary">Services</li>
+      </ol>    
+  </div>
+</div>
+
+
+
+ <!-- Start features -->
+ <section class="features section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title">
+          <h1>Prioritizing Your Family's Health</h1>
+          <img src="images/heading-underline.png">
+          <p>We're committed to providing immediate and reliable care for your family’s health and well-being.<br>Trust us to be there for you, every step of the way.</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-12">
+        <!-- Start Single features -->
+        <div class="single-features">
+          <div class="signle-icon">
+            <i class="fas fa-ambulance"></i>
+          </div>
+          <h3>Emergency Help</h3>
+          <p>Our Emergency Help service is available 24/7, ensuring immediate assistance in times of crisis. </p>
+        </div>
+        <!-- End Single features -->
+      </div>
+      <div class="col-lg-4 col-12">
+        <!-- Start Single features -->
+        <div class="single-features">
+          <div class="signle-icon">
+            <i class="fas fa-pills"></i>
+          </div>
+          <h3>Enriched Pharmecy</h3>
+          <p>Our Enriched Pharmacy offers a wide range of essential medications and healthcare products.</p>
+        </div>
+        <!-- End Single features -->
+      </div>
+      <div class="col-lg-4 col-12">
+        <!-- Start Single features -->
+        <div class="single-features last">
+          <div class="signle-icon">
+            <i class="fas fa-stethoscope"></i>
+          </div>
+          <h3>Medical Treatment</h3>
+          <p>Our Medical Treatment services provide comprehensive care for various health conditions. </p>
+        </div>
+        <!-- End Single features -->
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ End Features -->
+
+
+
+<!-- About End -->
+<section class="service-section">
+  <h1>Our Services</h1>
+  <img src="images/heading-underline.png" class="underline-image" alt="Heading Underline">
+  <div class="row">
+      <div class="row">
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-clinic-medical"></i>
+        </div>
+        <h3>Treatment for Common Illnesses</h3>
+        <p>Expert care for flu, infections, and other common illnesses to ensure a speedy recovery.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-air-freshener"></i>
+        </div>
+        <h3>Acne Treatment & Skin Care (Dermatology)</h3>
+        <p>Advanced dermatology treatments for acne, skin conditions, and overall skincare health.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-calendar-check"></i>
+        </div>
+        <h3>Annual Routine Check-ups</h3>
+        <p>Regular health check-ups to ensure overall well-being and early detection of issues.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-syringe"></i>
+        </div>
+        <h3>Diabetes Management & Insulin Therapy</h3>
+        <p>Personalized plans to manage diabetes, including medication, diet, and insulin therapy.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-heartbeat"></i>
+        </div>
+        <h3>Blood Pressure & Cholesterol Monitoring</h3>
+        <p>Comprehensive monitoring and management of blood pressure and cholesterol levels.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-procedures"></i>
+        </div>
+        <h3>Cardiovascular Treatment & Heart Health</h3>
+        <p>Expert heart health management, including diagnostic tests and treatment plans.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-user-injured"></i>
+        </div>
+        <h3>Inpatient/Outpatient Minor Surgical Procedures</h3>
+        <p>Safe and professional minor surgical procedures with expert medical care.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-baby"></i>
+        </div>
+        <h3>Family Planning Services</h3>
+        <p>Guidance and solutions for family planning, contraception, and reproductive health.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-virus"></i>
+        </div>
+        <h3>Infectious Disease Treatment</h3>
+        <p>Comprehensive care for infectious diseases, ensuring quick and effective treatment.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-cut"></i>
+        </div>
+        <h3>Circumcision</h3>
+        <p>Safe and professional circumcision procedures for infants, children, and adults.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-ambulance"></i>
+        </div>
+        <h3>Emergency Care</h3>
+        <p>Immediate medical attention for urgent health concerns. Fast response to critical situations, ensuring your safety and well-being.</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="icon-wrapper">
+          <i class="fas fa-shield-virus"></i>
+        </div>
+        <h3>Preventive Care</h3>
+        <p>Early detection and prevention of potential health risks. Regular screenings to catch issues before they become serious.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+   const serviceSection = document.querySelector('.service-section');
+ 
+   function checkVisibility() {
+     const rect = serviceSection.getBoundingClientRect();
+     // Trigger when the top of the service section is within 80% of the viewport height
+     if (rect.top < window.innerHeight * 0.8) {
+       serviceSection.classList.add("visible");
+       // Remove listener if you want the animation to occur only once:
+       window.removeEventListener("scroll", checkVisibility);
+     }
+   }
+ 
+   window.addEventListener("scroll", checkVisibility);
+   checkVisibility(); // Check on page load in case it's already in view
+ });
+ 
+ 
+ document.addEventListener("DOMContentLoaded", function () {
+   const serviceSection = document.querySelector('.service-section');
+ 
+   function checkVisibility() {
+     const rect = serviceSection.getBoundingClientRect();
+     if (rect.top < window.innerHeight * 0.8) { // Trigger when 80% of the section is in the viewport
+       serviceSection.classList.add("visible"); // Add 'visible' class to trigger animation
+       window.removeEventListener("scroll", checkVisibility); // Remove scroll event listener once triggered
+     }
+   }
+ 
+   window.addEventListener("scroll", checkVisibility);
+   checkVisibility(); // Check immediately on page load in case the section is already in view
+ });
+ 
+ </script>
+ 
+
+<!-- Start Appointment Section -->
+<section class="appointment">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title">
+          <h1>Book An Appointment</h1>
+          <img src="images/heading-underline.png" alt="#">
+          <p>Get in touch with us today for any inquiries, assistance, or support. We are here to help you with all your needs.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-12">
+        <form class="form" action="appointment-form.php" method="POST">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <input name="name" type="text" placeholder="Your Name">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <input name="email" type="email" placeholder="Your Email">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <input name="phone" type="text" placeholder="Your Phone Number">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="form-group">
+                <input name="date" type="date" placeholder="Select Date">
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-12">
+              <div class="form-group">
+                <textarea name="message" placeholder="Write Your Message Here..."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5 col-md-4 col-12">
+              <div class="form-group">
+                <div class="button">
+                  <button type="submit" class="btn">SUBMIT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="appointment-image">
+          <img src="images/appointment-img.webp" alt="#">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+ 
+  document.addEventListener("DOMContentLoaded", function () {
+    const sectionTitle = document.querySelector(".section-title");
+
+    function handleScroll() {
+      if (!sectionTitle) return; // Ensure the element exists
+
+      const sectionPosition = sectionTitle.getBoundingClientRect().top;
+      const screenHeight = window.innerHeight;
+
+      // When the section is 80% of the way into the viewport
+      if (sectionPosition < screenHeight * 0.8) {
+        sectionTitle.classList.add("visible");
+        window.removeEventListener("scroll", handleScroll); // Run animation only once
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Check on page load
+  });
+
+  // Function to detect when an element is in view
+  function isInView(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top <= window.innerHeight && rect.bottom >= 0;
+  }
+
+  // Function to add the 'visible' class when in view
+  function handleScroll() {
+    const images = document.querySelectorAll('.appointment .appointment-image img');
+    images.forEach(img => {
+      if (isInView(img)) {
+        img.classList.add('visible');
+      }
+    });
+  }
+
+  // Listen for scroll events
+  window.addEventListener('scroll', handleScroll);
+
+  // Trigger the check immediately in case elements are already in view
+  handleScroll();
+
+</script>
+<!-- End Appointment -->
+
+
+
+
+
+<!-- Footer Start -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <!-- Footer Column 1: About Section -->
+      <div class="col-md-4">
+        <h5>About Us</h5>
+        <p>Harmony Hospital is dedicated to providing the best healthcare services with a team of highly skilled professionals.</p>
+      </div>
+
+      <!-- Footer Column 2: Quick Links -->
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="laboratory.html">Laboratory</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Footer Column 3: Contact -->
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+      <p><i class="fas fa-envelope"></i> harmonyhospital@gmail.com        </p>
+        <p><i class="fas fa-phone"></i> +12679085444</p>
+        <p><i class="fas fa-map-marker-alt"></i> Martha Road, Pensalvania, USA</p>
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom text-center">
+      
+      <p>&copy; Harmony Hospital. All Rights Reserved. ztcreativedesign</p>
+
+    </div>
+  </div>
+</footer>
+<!-- Footer End -->
+
+
+
+<script src="script.js"></script>
+
+
+  
+  
+</body>
+</html>
